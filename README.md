@@ -1,8 +1,6 @@
-# School For Poetic Computation Summer 2020: Recreating the Past
-
 > In Recreating the Past, we will study computational art from the past decades and recreate these works with contemporary techniques to gain aesthetic, analytical and technical knowledge.
 
-Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for the class examples.
+Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for the class examples and [course page](https://sfpc.io/recreatingthepast-spring2020/) for more details.
 
 ## Vera Molnár
 
