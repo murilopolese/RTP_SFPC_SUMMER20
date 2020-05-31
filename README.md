@@ -13,8 +13,9 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 ### P5js
 
 - Linear Figure studies [1](p5js/john-withneylinear-figure-1/dist), [3](p5js/john-withneylinear-figure-3/dist) and [4](p5js/john-withneylinear-figure-4-random/dist)
-- [Linear figure 2](p5js/john-withneylinear-figure-2/dist)
-- [Linear figure 4 two](p5js/john-withneylinear-figure-4-two/dist)
+- [Linear figure study 2](p5js/john-withneylinear-figure-2/dist)
+- [Linear figure study 4 two](p5js/john-withneylinear-figure-4-two/dist)
+- [Linear figure](p5js/john-withneylinear-figure/dist)
 
 
 ### OpenFrameworks
