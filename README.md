@@ -24,6 +24,10 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withney-linear-figure)
 - [Linear figure 2](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withneylinear-figure-2)
 
+### Arduino
+
+- [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/arduino/john-withney-linear-figure)
+
 ## Unrelated
 
 - [Random digits](p5js/random-digits-animation/dist)
