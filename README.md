@@ -16,8 +16,8 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Linear figure study 2](p5js/john-withneylinear-figure-2/dist)
 - [Linear figure study 4 two](p5js/john-withneylinear-figure-4-two/dist)
 - [Linear figure](p5js/john-withneylinear-figure/dist)
-- [Matrix study]((p5js/john-withneymatrix-study-1/dist))
-- [Permutations study]((p5js/john-withneypermutations/dist))
+- [Matrix study](p5js/john-withneymatrix-study-1/dist)
+- [Permutations study](p5js/john-withneypermutations/dist)
 
 ### OpenFrameworks
 
