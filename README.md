@@ -29,6 +29,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 - [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/arduino/john-withney-linear-figure)
 
-## Unrelated
+## Unrelated and happy accidents
 
 - [Random digits](p5js/random-digits-animation/dist)
+- [Moving pattern](https://www.youtube.com/watch?v=T2r_tBrxVjs)
