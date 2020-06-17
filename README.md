@@ -39,6 +39,11 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ## Anni Albers
 
+### P5js
 - [Draft Notation (interactive)](p5js/anni-albersdraft-notation/dist)
 - [Weaving animation study 1](p5js/weaving-animation-study-1/dist)
 - [Weaving animation](p5js/weaving-animation-study-2/dist)
+
+### Physical object
+
+- [Mini KNEX Loom](images/miniloom1.jpg)
