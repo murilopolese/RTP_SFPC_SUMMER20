@@ -7,6 +7,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Carrés en deux positions 4](p5js/vera-moln-rcarr-s-en-deux-positions-4/dist)
 - [Machine imaginaire](p5js/vera-moln-rimaginary-machine/dist)
 - [Interruptions](p5js/vera-moln-rinterruptions/dist)
+- [Happy accident: Random digits](p5js/random-digits-animation/dist)
 
 ## John Withney
 
@@ -18,6 +19,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Linear figure](p5js/john-withneylinear-figure/dist)
 - [Matrix study](p5js/john-withneymatrix-study-1/dist)
 - [Permutations study](p5js/john-withneypermutations/dist)
+- [Happy accident: Moving pattern](https://www.youtube.com/watch?v=T2r_tBrxVjs)
 
 ### OpenFrameworks
 
@@ -29,7 +31,19 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 - [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/arduino/john-withney-linear-figure)
 
-## Unrelated and happy accidents
+## Muriel Cooper (and Dietmar Winkler)
 
-- [Random digits](p5js/random-digits-animation/dist)
-- [Moving pattern](https://www.youtube.com/watch?v=T2r_tBrxVjs)
+- [Dietmar Winkler's Teaching Children Thinking on Scratch](https://scratch.mit.edu/projects/404039785/)
+- [Muriel Cooper Message and Means on P5js](p5js/muriel-coopermeans-and-message/dist)
+- [Muriel Cooper Message and Means on P5js (responsive animation)](p5js/muriel-coopermeans-and-meaning-responsive/dist)
+
+## Anni Albers
+
+### P5js
+- [Draft Notation (interactive)](p5js/anni-albersdraft-notation/dist)
+- [Weaving animation study 1](p5js/weaving-animation-study-1/dist)
+- [Weaving animation](p5js/weaving-animation-study-2/dist)
+
+### Physical object
+
+- [Mini KNEX Loom](images/miniloom1.jpg)

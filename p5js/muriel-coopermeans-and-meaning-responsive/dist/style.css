@@ -1,0 +1,106 @@
+:root {
+  font-size: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100wh;
+  height: 100vh;
+/*   background: #322421; */
+  overflow: hidden;
+}
+main {
+  margin: auto;
+  width: 90vh;
+  height: 90vh;
+  background: #322421;
+  position: relative;
+  overflow: hidden;
+  transition: width 5s, height 5s, font-size 5s;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: calc(90vh / 7);
+  font-weight: bolder;
+  line-height: 0.9em;
+  letter-spacing: -0.05em;
+}
+.green {
+  color: rgba(0, 150, 0, 1);
+}
+.pink {
+  color: rgba(255, 50, 50, 1);
+}
+.blue {
+  color: rgba(20, 0, 100, 1);
+}
+
+p {
+  display: block;
+  position: absolute;
+  margin: 0;
+  mix-blend-mode: screen;
+}
+
+.pos1 {
+  top: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: translate(0, -1.6em) rotate(45deg);
+}
+.pos1 span {
+  margin-right: 0.7em;
+}
+
+.pos2 {
+  text-align: right;
+  top: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: rotate(-45deg);
+}
+.pos2 span {
+  margin-right: 0.4em;
+}
+
+.pos3 {
+  text-align: right;
+  top: 0;
+  right: 0;
+  transform: translate(2.7em, 0) rotate(-225deg) translate(2em, 0);
+}
+
+.pos4 {
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: translate(0.25em, 2em) rotate(45deg)
+}
+.pos4 span {
+  margin-right: 0.4em;
+}
+
+.pos5 {
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: translate(0.2em, 0) rotate(-45deg);
+}
+.pos5 span {
+  margin-right: 0.4em;
+}
+
+.pos6 {
+  bottom: 0;
+  left: 0;
+  transform: translate(-2em, -1em) 
+    rotate(-225deg) translate(-1.25em, 0);
+}
+.pos6 span {
+  margin-right: 1.5em;
+}

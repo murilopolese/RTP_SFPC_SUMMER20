@@ -1,0 +1,83 @@
+:root {
+  --grid-size: 30vh;
+  --cell-size: calc(var(--grid-size) / 12);
+  --mesh-size: calc(var(--grid-size) * 2);
+  --mesh-line-size: var(--cell-size);
+  --mesh-cell-size: calc(var(--mesh-size) / 12);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #fdfdfd;
+  width: 100vw;
+  height: 100vh;
+/*   background-image:
+    linear-gradient(
+      to right,transparent var(--cell-size), grey var(--cell-size)
+    ),
+    linear-gradient(
+      to bottom,transparent var(--cell-size), grey var(--cell-size)
+    );
+  background-size: 
+    calc(var(--cell-size) + 1px) 100%, 
+    100% calc(var(--cell-size) + 1px); */
+}
+
+#grid {
+  width: var(--grid-size);
+  height: var(--grid-size);
+  display: flex;
+  flex-direction: column;
+  margin: 2.5vh auto;
+  cursor: pointer;
+}
+#grid .row {
+  width: 100%;
+  height: var(--cell-size);
+  display: flex;
+  flex-flow: row;
+}
+#grid .cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+#grid .cell.over {
+  background: black;
+}
+
+#mesh {
+  width: var(--mesh-size);
+  height: var(--mesh-size);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#mesh .cell {
+  position: relative;
+  float: left;
+  width: var(--mesh-cell-size);
+  height: var(--mesh-cell-size);
+}
+
+#mesh .cell .h-line {
+  position: absolute;
+  width: 100%;
+  height: var(--mesh-line-size);
+  top: calc(50% - 20%);
+  background: black;
+}
+#mesh .cell .v-line {
+  position: absolute;
+  width: var(--mesh-line-size);
+  height: 100%;
+  left: calc(50% - 20%);
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  background: #fdfdfd;
+}
+
+#mesh .cell .over {
+  z-index: 1;
+}
