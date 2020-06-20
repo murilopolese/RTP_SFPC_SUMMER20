@@ -115,6 +115,7 @@ void CHANJ(int x, int y, int w, int h, int p, int rule) {
     int rules[4] = {0, 0, 0, 0};
     for (int i = 0; i < 4; i++) {
         int v = rule / pow(10, 3-i);
+        v = v % 10;
         rules[i] = v;
     }
 
@@ -203,7 +204,6 @@ void COMBN(int x, int y, int w, int h, int p, int xf, int yf, int orient, int r0
             
         }
     }
-    
 }
 
 void demo() {
@@ -261,6 +261,68 @@ void example_1() {
     SHOW(70, 70, 140, 140);
 }
 
+void example_2() {
+    for (int ix = 1; ix < 140; ix++) {
+        for (int iy = 1; iy < 140; iy++) {
+            PUT(ix, iy, abs((ix - iy) * (ix + (2 * iy)) / 70) % 4);
+        }
+    }
+    SHOW(70, 70, 140, 140);
+}
+
+void example_6() {
+    CHANJ(70, 70, 140, 140, 100, 1111);
+    
+    PUT16(107, 13, 1122, 2224, 4444, 4444);
+    PUT16(107, 12, 1222, 2234, 4444, 4444);
+    PUT16(107, 11, 0000, 0334, 4444, 4444);
+    PUT16(107, 10, 0000, 0334, 4444, 4444);
+    PUT16(107, 9,  0000, 0334, 4444, 4444);
+    PUT16(107, 8,  0000, 0334, 4444, 4444);
+    PUT16(107, 7,  0000, 0334, 4444, 4444);
+    
+    for (int j = 1; j < 17; j++) {
+        for (int k = 1; k < 17; k++) {
+            for (int l = 1; l < 9; l++) {
+                // Inside the sphere
+                if ((pow((j - 9), 2) + pow((k - 9), 2) + pow((l - 1), 2)) <= 70) {
+                    int ix = 30 + 5 * j - 2 * k;
+                    int iy = 38 + 5 * l - 2 * k;
+                    COMBN(ix, iy, 7, 7, 100, 110, 10, 1, 0, 123, 2222, 3333);
+                }
+            }
+        }
+    }
+    SHOW(70, 70, 140, 140);
+}
+
+void example_6_animated(int t) {
+    CHANJ(70, 70, 140, 140, 100, 1111);
+    SHOW(70, 70, 140, 140);
+    
+    PUT16(107, 13, 1122, 2224, 4444, 4444);
+    PUT16(107, 12, 1222, 2234, 4444, 4444);
+    PUT16(107, 11, 0000, 0334, 4444, 4444);
+    PUT16(107, 10, 0000, 0334, 4444, 4444);
+    PUT16(107, 9,  0000, 0334, 4444, 4444);
+    PUT16(107, 8,  0000, 0334, 4444, 4444);
+    PUT16(107, 7,  0000, 0334, 4444, 4444);
+    
+    for (int j = 1; j < 17; j++) {
+        for (int k = 1; k < 17; k++) {
+            for (int l = 1+t; l < 4+t; l++) {
+                // Inside the sphere
+                if ((pow((j - 9), 2) + pow((k - 9), 2) + pow((l - 10), 2)) <= 70) {
+                    int ix = 30 + 5 * j - 2 * k;
+                    int iy = 38 + 5 * l - 2 * k;
+                    COMBN(ix, iy, 7, 7, 100, 110, 10, 1, 0, 123, 2222, 3333);
+                }
+            }
+        }
+    }
+    SHOW(70, 70, 140, 140);
+}
+
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofRectMode(OF_RECTMODE_CENTER);
@@ -271,12 +333,13 @@ void ofApp::setup(){
         display[i] = 0;
     }
     
-    example_1();
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
+    int t = ofMap(sin(ofGetElapsedTimef()), -1, 1, -5, 20);
+    example_6_animated(t);
 }
 
 //--------------------------------------------------------------
@@ -284,6 +347,9 @@ void ofApp::draw(){
     ofBackground(200, 200, 200);
     ofRectMode(OF_RECTMODE_CENTER);
     ofSetColor(0, 0, 0);
+    ofTranslate(0, ofGetHeight());
+    ofScale(1, -1);
+    
     for (int x = 0; x < 140; x++) {
         for (int y = 0; y < 140; y++) {
             float lx = ofMap(x, 0, 140, 0, ofGetWidth());
