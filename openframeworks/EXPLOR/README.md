@@ -6,4 +6,6 @@ This is an attempt to reimplement [MINI-EXPLOR](https://github.com/murilopolese/
 ![OpenFrameworks code for example 1](of_code_example_1.png)
 ![Original code and render of example 1](original_code_example_1.png)
 
+![OpenFrameworks render of example 6](example6.png)
+
 [Video of example 6 animated](https://youtu.be/BC7Id3UNORs)
