@@ -58,7 +58,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 ### P5js
 
 - [Wireworld blink circuit](p5js/cellular-automata-wireworld-1/dist)
-- [Wireworld cellular automata output rule 110](p5js/cellular-automata-wireworld-rule-110/dist)
+- [Wireworld cellular automata output rule 110](p5js/cellular-automatawireworld-rule-110/dist)
 
 ### Fortran (lol)
 
