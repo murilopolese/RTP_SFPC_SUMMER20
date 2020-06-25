@@ -62,4 +62,4 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### Fortran (lol)
 
-- [Source code for portrait render of EXPLOR example 6](https://github.com/murilopolese/explor/blob/master/examples/example6_1.explor) and [here is the render](example6_1.pdf).
+- [Source code for portrait render of EXPLOR example 6](https://github.com/murilopolese/explor/blob/master/examples/example6_1.explor) and [here is a render in pdf](https://github.com/murilopolese/RTP_SFPC_SUMMER20/blob/master/openframeworks/EXPLOR/example6_1.pdf).
