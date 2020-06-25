@@ -135,10 +135,154 @@ void CHANJ(int x, int y, int w, int h, int p, int rule) {
 /*
  > LOCOP (x,y,w,h,%,OK-counts,neighbors,these,rule) is a local operation, causing certain of the cells in the specified region to be changed according to the indicated rule: Those changed are the ones with acceptable counts of the designated adjacent cells holding appropriate numbers:
  */
-// TODO LOCOP
+void LOCOP(int x, int y, int w, int h, int p, int okcount, int neighbors, int these, int rule) {
+    int left = x - w / 2;
+    int right = x + w / 2;
+    int top = y - h / 2;
+    int bottom = y + h / 2;
+    
+    
+    for (int lx = left; lx < right; lx++) {
+        for(int ly = top; ly < bottom; ly++) {
+            // Create an array to store separated digits of okcount
+            int counts[4] = {-1, -1, -1, -1};
+            for (int i = 0; i < 4; i++) {
+                int v = okcount / pow(10, 3-i);
+                v = v % 10;
+                // > If zero is a permissible count, it must be last.
+                if (v == 0 && i != 3) {
+                    counts[i] = -1;
+                } else {
+                    counts[i] = v;
+                }
+            }
+            
+            /*
+             > neighbors is a 3-digit number specifying a set of neighbors, made up by summing the corresponding numbers from this chart:
+             > 400 200 100      positions: 0  1  2
+             >  40      10                 3     4
+             >   4   2   1                 5  6  7
+            */
+            int position[8] = { -1, -1, -1, -1, -1, -1, -1, -1 };
+            int table = neighbors;
+            while (table > 0) {
+                if (table >= 400) {
+                    position[0] = 1;
+                    table -= 400;
+                } else if (table >= 200) {
+                    position[1] = 1;
+                    table -= 200;
+                } else if (table >= 100) {
+                    position[2] = 1;
+                    table -= 100;
+                } else if (table >= 40) {
+                    position [3] = 1;
+                    table -= 40;
+                } else if (table >= 10) {
+                    position [4] = 1;
+                    table -= 10;
+                } else if (table >= 4) {
+                    position [5] = 1;
+                    table -= 4;
+                } else if (table >= 2) {
+                    position [6] = 1;
+                    table -= 2;
+                } else if (table >= 1) {
+                    position [7] = 1;
+                    table -= 1;
+                } else {
+                    // oh well...
+                }
+            }
+            
+            
+            // Create an array to store what are the values that should be altered
+            int values[4] = {-1, -1, -1, -1};
+            for (int i = 0; i < 4; i++) {
+                int v = these / pow(10, 3-i);
+                v = v % 10;
+                // > If zero is a permissible count, it must be last.
+                if (v == 0 && i != 3) {
+                    values[i] = -1;
+                } else {
+                    values[i] = v;
+                }
+            }
+            
+            // Create an array to store separated digits of rule
+            int rules[4] = {0, 0, 0, 0};
+            for (int i = 0; i < 4; i++) {
+                int v = rule / pow(10, 3-i);
+                v = v % 10;
+                rules[i] = v;
+            }
+            
+            int sum = 0; // We want to keep track of that
+            // Go over the neighborhs, check if they are part of this operation,
+            for (int n = 0; n < 8; n++) {
+                // if it's -1, not part of operation
+                if (position[n] < 0) {
+                    continue;
+                }
+                // searh for some values and apply a rule
+                int value = 0;
+                switch(n) {
+                    case 0:
+                        value = DISPLAY(lx-1, ly-1);
+                        break;
+                    case 1:
+                        value = DISPLAY(lx, ly-1);
+                        break;
+                    case 2:
+                        value = DISPLAY(lx+1, ly-1);
+                        break;
+                    case 3:
+                        value = DISPLAY(lx-1, ly);
+                        break;
+                    case 4:
+                        value = DISPLAY(lx+1, ly);
+                        break;
+                    case 5:
+                        value = DISPLAY(lx-1, ly+1);
+                        break;
+                    case 6:
+                        value = DISPLAY(lx, ly+1);
+                        break;
+                    case 7:
+                        value = DISPLAY(lx+1, ly+1);
+                        break;
+                }
+                
+                int isThese = 0;
+                for (int t = 0; t < 4; t++) {
+                    if (values[t] > 0 && values[t] == value) {
+                        sum++; // You are counting this one!
+                    }
+                }
+            }
+            // Phew!
+            
+            
+            // Check if we are looking for this particular sum
+            int isCount = 0;
+            for (int c = 0; c < 4; c++) {
+                if (counts[c] == sum) {
+                    isCount = 1;
+                }
+            }
+    
+            if (isCount == 1) {
+                // Apply rule
+                if (ofRandom(99) < p) {
+                    PUT(lx, ly, rules[DISPLAY(lx, ly)]);
+                }
+            }
+        }
+    }
+}
 
 /*
- > COMBN (x,y,w,h,%,xf,yf,orient,r0,rl,r2,r3) read "combine" - causes contents df the indicated percentage of x,y,w,h, to be changed by one of four rules, depending on contents of a corres- ponding cell in an area centered at (xf,yf). The result is thus a simple or complicated "combination" of two picture areas, and is imagined to come about as follows: a copy of the neighborhood of the "form" area centered at (xf,yf) is picked up, (re)oriented according to the value 1-8 of orient:
+ > COMBN (x,y,w,h,%,xf,yf,orient,r0,rl,r2,r3) read "combine" - causes contents of the indicated percentage of x,y,w,h, to be changed by one of four rules, depending on contents of a corres- ponding cell in an area centered at (xf,yf). The result is thus a simple or complicated "combination" of two picture areas, and is imagined to come about as follows: a copy of the neighborhood of the "form" area centered at (xf,yf) is picked up, (re)oriented according to the value 1-8 of orient:
      1 as is
      2 rotate 90° clockwise
      3 rotate 180°
@@ -270,6 +414,83 @@ void example_2() {
     SHOW(70, 70, 140, 140);
 }
 
+void example_3(float t) {
+    if ((fmod(t, 1.0)) > 0.5) {
+        CHANJ(70, 70, 140, 140, 100, 0);
+        for (int k = 1; k < 18; k++) {
+            int iy = (140/18)*k;
+            int ix = NE(1, 139);
+            if (DISPLAY(ix, iy) != 0) {
+                continue;
+            }
+            int iw = 18 - k;
+            int ih = k - 1;
+            for(int j = 1; j < 9; j++) {
+                CHANJ(ix, iy, iw+2*j, ih+2*(10-j), 100, 3012);
+            }
+        }
+        SHOW(70, 70, 140, 140);
+    }
+}
+
+void example_4() {
+    CHANJ(70, 70, 140, 140, 100, 0);
+    SHOW(70, 70, 140, 140);
+    
+    // 140 / 5 = 28 = size of column/line
+    // 140 - (size/2) = 140 - 14 = 126 = center of bottom right cell
+    int x = 140 - ((140/5)/2);
+    int y = (140/5)/2;
+    PUT4(x-1, y+1, 3330);
+    PUT4(x-1, y, 3030);
+    PUT4(x-1, y-1, 3030);
+    SHOW(70, 70, 140, 140);
+    
+    for (int i = 0; i < 25; i++) {
+        // Make a copy before next step
+        int ix = ((i%5) * 28) + 14;
+        int iy = 140 - ((i/5) * 28) - 14;
+        COMBN(ix, iy, 28, 28, 100, x, y, 1, 0, 1111, 2222, 3333);
+        SHOW(70, 70, 140, 140);
+        // The rules of life
+        LOCOP(x, y, 28, 28, 100, 3, 757, 3, 1123);
+        SHOW(70, 70, 140, 140);
+        LOCOP(x, y, 28, 28, 100, 23, 757, 3, 122);
+        SHOW(70, 70, 140, 140);
+        CHANJ(x, y, 28, 28, 100, 330);
+        SHOW(70, 70, 140, 140);
+    }
+    
+}
+
+void example_5() {
+    CHANJ(70, 70, 140, 140, 100, 0);
+    SHOW(70, 70, 140, 140);
+    // 5 x 5 trials (grid)
+    for (int j = 0; j < 5; j++) {
+        for(int k = 0; k < 5; k++) {
+            // Place nucleus
+            PUT(28*j+14, 28*k+14, 3);
+            SHOW(70, 70, 140, 140);
+            int nabrs = 0;
+            while (nabrs == 0) {
+                nabrs = 100 * NE(0, 8);
+                nabrs += NE(0, 8);
+                nabrs += 40 * NE(0, 2);
+                nabrs += 10 * NE(0, 2);
+            }
+            int many = 1000 + 100 * NE(2, 9);
+            many += 10 + NE(2, 9);
+            many += NE(2, 9);
+            // Iterate 16 times
+            for (int l = 1; l < 16; l++) {
+                LOCOP(28*j+14, 28*k+14, 26, 26, 100, many, nabrs, 3, 3333);
+                SHOW(70, 70, 140, 140);
+            }
+        }
+    }
+}
+
 void example_6() {
     CHANJ(70, 70, 140, 140, 100, 1111);
     
@@ -323,6 +544,7 @@ void example_6_animated(int t) {
     SHOW(70, 70, 140, 140);
 }
 
+
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofRectMode(OF_RECTMODE_CENTER);
@@ -333,13 +555,24 @@ void ofApp::setup(){
         display[i] = 0;
     }
     
-    
+    ofSetFrameRate(20);
+    example_5();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     int t = ofMap(sin(ofGetElapsedTimef()), -1, 1, -5, 20);
-    example_6_animated(t);
+    
+//    demo();
+//    example_1();
+//    example_2();
+//    example_3(t);
+//    example_4();
+
+//    example_6();
+//    example_6_animated(t);
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -383,7 +616,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+    example_5();
 }
 
 //--------------------------------------------------------------
