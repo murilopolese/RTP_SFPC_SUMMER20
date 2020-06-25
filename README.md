@@ -52,7 +52,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### OpenFrameworks
 
-- [EXPLOR partial reimplementation](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/EXPLOR)
+- [EXPLOR (partial) reimplementation](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/EXPLOR)
 - [Wireworld cellular automata output rule 110](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/wireworld)
 
 ### P5js
