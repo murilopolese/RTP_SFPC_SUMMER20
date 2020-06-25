@@ -556,15 +556,18 @@ void ofApp::setup(){
     }
     
     ofSetFrameRate(20);
+//    example_1();
     example_5();
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    int t = ofMap(sin(ofGetElapsedTimef()), -1, 1, -5, 20);
+//    float t = ofMap(sin(ofGetElapsedTimef()), -1, 1, -5, 20);
+    float t = ofGetElapsedTimef();
     
 //    demo();
-//    example_1();
+
 //    example_2();
 //    example_3(t);
 //    example_4();
