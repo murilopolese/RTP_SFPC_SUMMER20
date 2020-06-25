@@ -47,3 +47,19 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 ### Physical object
 
 - [Mini KNEX Loom](images/miniloom1.jpg)
+
+## Ken Knolton and Lilian Schwartz
+
+### OpenFrameworks
+
+- [EXPLOR partial reimplementation](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/EXPLOR)
+- [Wireworld cellular automata output rule 110](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/wireworld)
+
+### P5js
+
+- [Wireworld blink circuit](p5js/cellular-automata-wireworld-1/dist)
+- [Wireworld cellular automata output rule 110](p5js/cellular-automata-wireworld-rule-110/dist)
+
+### Fortran (lol)
+
+- [Source code for portrait render of EXPLOR example 6](https://github.com/murilopolese/explor/blob/master/examples/example6_1.explor) and [here is the render](example6_1.pdf).
