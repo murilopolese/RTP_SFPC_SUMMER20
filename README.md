@@ -23,13 +23,13 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### OpenFrameworks
 
-- [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withney-linear-figure)
-- [Linear figure 2](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withneylinear-figure-2)
-- Digital Harmony studies [1](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withney-digital-harmony-1), [2](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withney-digital-harmony-2) and [3](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/john-withney-digital-harmony-3)
+- [Linear figure](openframeworks/john-withney-linear-figure)
+- [Linear figure 2](openframeworks/john-withneylinear-figure-2)
+- Digital Harmony studies [1](openframeworks/john-withney-digital-harmony-1), [2](openframeworks/john-withney-digital-harmony-2) and [3](openframeworks/john-withney-digital-harmony-3)
 
 ### Arduino
 
-- [Linear figure](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/arduino/john-withney-linear-figure)
+- [Linear figure](arduino/john-withney-linear-figure)
 
 ## Muriel Cooper (and Dietmar Winkler)
 
@@ -52,8 +52,8 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### OpenFrameworks
 
-- [EXPLOR (partial) reimplementation](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/EXPLOR)
-- [Wireworld cellular automata output rule 110](https://github.com/murilopolese/RTP_SFPC_SUMMER20/tree/master/openframeworks/wireworld)
+- [EXPLOR (partial) reimplementation](openframeworks/EXPLOR)
+- [Wireworld cellular automata output rule 110](openframeworks/wireworld)
 
 ### P5js
 
@@ -63,3 +63,25 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 ### Fortran (lol)
 
 - [Source code for portrait render of EXPLOR example 6](https://github.com/murilopolese/explor/blob/master/examples/example6_1.explor) and [here is a render in pdf](https://github.com/murilopolese/RTP_SFPC_SUMMER20/blob/master/openframeworks/EXPLOR/example6_1.pdf).
+
+## Nancy Burson / Jason Salavon
+
+`¯\_(ツ)_/¯`
+
+## Camille Utterback and Romy Achituv / Myron Krueger
+
+- [Brainflux](objects/BRAINFLUX.pdf), an esoteric brainf** dialect that takes out the foul mouth and the text form and leaves us with our bodies, minds and the cyberspace.
+
+## Glitch / Deformation (Rosa Menkman / Steina and Woody Vasulka
+
+### Arduino
+
+- [NTSC Color Glitches](https://www.youtube.com/watch?v=Q5CCI4k4AS8)
+- [Pixel Poetry on NTSC](https://www.youtube.com/watch?v=V1CWwLJ93Tg)
+- [Source code](arduino/esp_8_bit)
+
+## Bring your own artist: Waldemar Cordeiro
+
+- [Fantasia Exata](p5js/waldemar-cordeirofantasia-exata-1/dist)
+- [Ideia Visível](p5js/waldemar-cordeiroideia-visivel/dist)
+- [Process documentation](objects/Recriando_Waldemar_Cordeiro.pdf) ([live](https://docs.google.com/presentation/d/1oZKqfZcPlffNerq9TVY6gtqxfmuuQ71iDdg3lt-sCRc/edit?usp=sharing))
