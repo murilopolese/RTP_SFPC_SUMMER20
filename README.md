@@ -76,7 +76,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### Arduino
 
-- [NTSC Color Glitches](https://www.youtube.com/watch?v=Q5CCI4k4AS8)
+- [NTSC Color Glitches](https://www.youtube.com/watch?v=5xNUvFZrUEE)
 - [Pixel Poetry on NTSC](https://www.youtube.com/watch?v=V1CWwLJ93Tg)
 - [Source code](arduino/esp_8_bit)
 

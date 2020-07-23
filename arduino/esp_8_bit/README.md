@@ -1,5 +1,5 @@
 ```
-Stop right there! Look at those entertaining shapes by Michael Naylor!
+Stop right there! Look at this entertaining shapes by Michael Naylor!
    ______            ______            ______
   /\_____\          /\_____\          /\_____\          ____
  _\ \__/_/_         \ \__/_/_         \ \__/_/         /\___\
@@ -12,7 +12,7 @@ Stop right there! Look at those entertaining shapes by Michael Naylor!
 
 # Read this first than the README
 
-> *Before you begin*: This is a hack on top of another hack. I don't blame you if you don't want to navigate double pointers (literally, `uint8_t**`). Check the file [`src/gui.c`](src/gui.c) and search for `random_characters` to find where in the I put my code. If you only look at that is not that horrible. Good luck, have fun!
+> *Before you begin*: This is a hack on top of another hack. I don't blame you if you don't want to navigate double pointers (literally, `uint8_t**`). Check [the file `src/gui.c`](https://github.com/murilopolese/RTP_SFPC_SUMMER20/blob/master/arduino/esp_8_bit/src/gui.cpp#L487-L692) and search for `random_characters` to find where in the I put my code. If you only look at that is not that horrible. Good luck, have fun!
 
 # **ESP_8_BIT:** Atari 8 bit computers, NES and SMS game consoles on your TV with nothing more than a ESP32 and a sense of nostalgia
 ## Supports NTSC/PAL color composite video output, Bluetooth Classic or IR keyboards and joysticks; just the thing when we could all use a little distraction
