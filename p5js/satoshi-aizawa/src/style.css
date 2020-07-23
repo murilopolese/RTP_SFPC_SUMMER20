@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background: #fafafa;
+  text-align: center;
+  font-family: monospace;
+  color: #ccc;
+}
+canvas {
+  margin: auto
+}

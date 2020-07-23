@@ -85,3 +85,5 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Fantasia Exata](p5js/waldemar-cordeirofantasia-exata-1/dist)
 - [Ideia Visível](p5js/waldemar-cordeiroideia-visivel/dist)
 - [Process documentation](objects/Recriando_Waldemar_Cordeiro.pdf) ([live](https://docs.google.com/presentation/d/1oZKqfZcPlffNerq9TVY6gtqxfmuuQ71iDdg3lt-sCRc/edit?usp=sharing))
+
+(I also made [a recreation](p5js/satoshi_aizawa/dist) of [Satoshi Aizawa's](https://twitter.com/satoshi_aizawa/status/1236958279395430405) work)
