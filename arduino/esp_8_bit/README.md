@@ -1,16 +1,6 @@
-```
-Stop right there! Look at this entertaining shapes by Michael Naylor!
-   ______            ______            ______
-  /\_____\          /\_____\          /\_____\          ____
- _\ \__/_/_         \ \__/_/_         \ \__/_/         /\___\
-/\_\ \_____\        /\ \_____\        /\ \___\        /\ \___\
-\ \ \/ / / /        \ \/ / / /        \ \/ / /        \ \/ / /
- \ \/ /\/ /          \/_/\/ /          \/_/_/          \/_/_/
-  \/_/\/_/              \/_/
-
-```
-
 # Read this first than the README
+
+[!["Print 10" pattern](img/print10.jpg)](https://www.youtube.com/watch?v=V1CWwLJ93Tg)
 
 > *Before you begin*: This is a hack on top of another hack. I don't blame you if you don't want to navigate double pointers (literally, `uint8_t**`). Check [the file `src/gui.c`](https://github.com/murilopolese/RTP_SFPC_SUMMER20/blob/master/arduino/esp_8_bit/src/gui.cpp#L487-L692) and search for `random_characters` to find where in the I put my code. If you only look at that is not that horrible. Good luck, have fun!
 

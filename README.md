@@ -2,14 +2,14 @@
 
 Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for the class examples and [course page](https://sfpc.io/recreatingthepast-spring2020/) for more details.
 
-## Vera Molnár
+## [Vera Molnár](research/Vera_Molnár)
 
 - [Carrés en deux positions 4](p5js/vera-moln-rcarr-s-en-deux-positions-4/dist)
 - [Machine imaginaire](p5js/vera-moln-rimaginary-machine/dist)
 - [Interruptions](p5js/vera-moln-rinterruptions/dist)
 - [Happy accident: Random digits](p5js/random-digits-animation/dist)
 
-## John Withney
+## [John Withney](research/John_Whitney)
 
 ### P5js
 
@@ -31,13 +31,13 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 - [Linear figure](arduino/john-withney-linear-figure)
 
-## Muriel Cooper (and Dietmar Winkler)
+## [Muriel Cooper (and Dietmar Winkler)](research/John_Whitney)
 
 - [Dietmar Winkler's Teaching Children Thinking on Scratch](https://scratch.mit.edu/projects/404039785/)
 - [Muriel Cooper Message and Means on P5js](p5js/muriel-coopermeans-and-message/dist)
 - [Muriel Cooper Message and Means on P5js (responsive animation)](p5js/muriel-coopermeans-and-meaning-responsive/dist)
 
-## Anni Albers
+## [Anni Albers](research/Anni_Albers)
 
 ### P5js
 - [Draft Notation (interactive)](p5js/anni-albersdraft-notation/dist)
@@ -47,6 +47,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 ### Physical object
 
 - [Mini KNEX Loom](objects/miniloom1.jpg)
+- [2 color pattern](objects/pattern_weaving.jpg)
 
 ## Ken Knolton and Lilian Schwartz
 
