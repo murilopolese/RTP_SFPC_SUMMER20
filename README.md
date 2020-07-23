@@ -46,7 +46,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ### Physical object
 
-- [Mini KNEX Loom](images/miniloom1.jpg)
+- [Mini KNEX Loom](objects/miniloom1.jpg)
 
 ## Ken Knolton and Lilian Schwartz
 
