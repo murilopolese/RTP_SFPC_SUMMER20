@@ -4,12 +4,16 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ## [Vera Molnár](research/Vera_Molnár)
 
+[Research document](research/Vera_Molnár).
+
 - [Carrés en deux positions 4](p5js/vera-moln-rcarr-s-en-deux-positions-4/dist)
 - [Machine imaginaire](p5js/vera-moln-rimaginary-machine/dist)
 - [Interruptions](p5js/vera-moln-rinterruptions/dist)
 - [Happy accident: Random digits](p5js/random-digits-animation/dist)
 
 ## [John Withney](research/John_Whitney)
+
+[Research document](research/John_Whitney).
 
 ### P5js
 
@@ -37,7 +41,9 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Muriel Cooper Message and Means on P5js](p5js/muriel-coopermeans-and-message/dist)
 - [Muriel Cooper Message and Means on P5js (responsive animation)](p5js/muriel-coopermeans-and-meaning-responsive/dist)
 
-## [Anni Albers](research/Anni_Albers)
+## Anni Albers
+
+[Research document](research/Anni_Albers).
 
 ### P5js
 - [Draft Notation (interactive)](p5js/anni-albersdraft-notation/dist)
@@ -50,6 +56,10 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [2 color pattern](objects/pattern_weaving.jpg)
 
 ## Ken Knolton and Lilian Schwartz
+
+[Lilian's research document](research/Lillian_Schwartz).
+
+[Ken's research document](research/Ken_Knowlton).
 
 ### OpenFrameworks
 
@@ -67,13 +77,21 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 ## Nancy Burson / Jason Salavon
 
+[Jason's research document](research/Jason_Salavon).
+
 `¯\_(ツ)_/¯`
 
 ## Camille Utterback and Romy Achituv / Myron Krueger
 
+[Myrions's research document](research/Myrion_Krueger).
+
 - [Brainflux](objects/BRAINFLUX.pdf), an esoteric brainf** dialect that takes out the foul mouth and the text form and leaves us with our bodies, minds and the cyberspace.
 
-## Glitch / Deformation (Rosa Menkman / Steina and Woody Vasulka
+## Glitch / Deformation (Rosa Menkman / Steina and Woody Vasulka)
+
+[Rosa's research document](research/Rosa_Menkman).
+
+[Vasulka's research document](research/Woody_and_Steina_Vasulka).
 
 ### Arduino
 
@@ -82,6 +100,8 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Source code](arduino/esp_8_bit)
 
 ## Bring your own artist: Waldemar Cordeiro
+
+[Research document](research/Waldemar_Cordeiro).
 
 - [Fantasia Exata](p5js/waldemar-cordeirofantasia-exata-1/dist)
 - [Ideia Visível](p5js/waldemar-cordeiroideia-visivel/dist)
