@@ -79,6 +79,8 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 [Jason's research document](research/Jason_Salavon).
 
+[Nancy's research document](research/Nancy_Burson).
+
 `¯\_(ツ)_/¯`
 
 ## Camille Utterback and Romy Achituv / Myron Krueger
