@@ -2,7 +2,7 @@
 
 Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for the class examples and [course page](https://sfpc.io/recreatingthepast-spring2020/) for more details.
 
-## [Vera Molnár](research/Vera_Molnár)
+## Vera Molnár
 
 [Research document](research/Vera_Molnár).
 
@@ -11,7 +11,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 - [Interruptions](p5js/vera-moln-rinterruptions/dist)
 - [Happy accident: Random digits](p5js/random-digits-animation/dist)
 
-## [John Withney](research/John_Whitney)
+## John Withney
 
 [Research document](research/John_Whitney).
 
@@ -35,7 +35,7 @@ Check the original [repository](https://github.com/ofZach/RTP_SFPC_SUMMER20) for
 
 - [Linear figure](arduino/john-withney-linear-figure)
 
-## [Muriel Cooper (and Dietmar Winkler)](research/John_Whitney)
+## Muriel Cooper (and Dietmar Winkler)
 
 - [Dietmar Winkler's Teaching Children Thinking on Scratch](https://scratch.mit.edu/projects/404039785/)
 - [Muriel Cooper Message and Means on P5js](p5js/muriel-coopermeans-and-message/dist)
